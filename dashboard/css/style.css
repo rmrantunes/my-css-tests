@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.view {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 40px 1fr;
+  grid-template-areas:
+    "hd hd"
+    "sb main";
+  min-height: 100vh;
+  min-width: 920px;
+}
+
+.header {
+  background: black;
+  grid-area: hd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.sidebar {
+  background: greenyellow;
+  grid-area: sb;
+}
+
+.dashboard {
+  background: indianred;
+  grid-area: main;
+}
+
+.blue {
+  background: aquamarine;
+}
+
+/* Header */
+.header a,
+.header p {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+/* Dashboard*/
+
+.info-cards-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 20px 15px;
+}
+
+.info-card {
+  height: 100px;
+  background: white;
+}
+
+.map-cards-container {
+  width: 100%;
+  height: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 40px 30px;
+
+  padding: 20px 15px;
+  margin-top: 40px;
+}
+
+.map-card {
+  height: 200px;
+  background: bisque;
+}

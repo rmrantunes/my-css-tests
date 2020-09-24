@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cards-container {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+
+  padding: 20px;
+
+  background: #999;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+
+  padding: 0 35px;
+}
+
+.card .img-container img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Empresas */
+.edp {
+  background: #c12;
+}
+
+.vivo {
+  background: rgb(255, 255, 255);
+}
+
+.mult {
+  background: #ddd;
+}
+
+.hype {
+  background: rgb(3, 16, 32);
+}
+
+.flry {
+  background: rgb(0, 0, 0);
+}
+
+.pssa {
+  background: rgb(23, 110, 126);
+}
+
+/* Responsivo */
+@media (max-width: 1200px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}

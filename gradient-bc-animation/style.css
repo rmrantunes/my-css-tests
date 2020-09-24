@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e4afcb), color-stop(0%, #b8cbb8), color-stop(0%, #b8cbb8), color-stop(30%, #e2c58b), color-stop(64%, #c2ce9c), to(#7edbdc));
+  background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+  background-size: 300%;
+  -webkit-animation: bcAnimation 10s ease infinite alternate;
+          animation: bcAnimation 10s ease infinite alternate;
+}
+
+.title {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  padding: 50px 100px;
+  background-color: rgba(238, 238, 238, 0.219);
+  color: white;
+}
+
+@-webkit-keyframes bcAnimation {
+  0% {
+    background-position: 0% 60%;
+  }
+  50% {
+    background-position: 95% 10%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
+@keyframes bcAnimation {
+  0% {
+    background-position: 0% 60%;
+  }
+  50% {
+    background-position: 95% 10%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

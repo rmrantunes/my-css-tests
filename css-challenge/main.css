@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.mobile-view {
+  width: 460px;
+  height: 660px;
+  overflow: scroll;
+  -webkit-box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  background-color: #B97CFC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.header__burger {
+  width: 36px;
+  height: 36px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.header__burger > div {
+  height: 4px;
+  width: 70%;
+  left: 15%;
+  position: absolute;
+  background-color: white;
+}
+
+.header__burger--1 {
+  top: 25%;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+.header__burger--2 {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.header__burger--3 {
+  top: 75%;
+  -webkit-transform: translateY(-75%);
+          transform: translateY(-75%);
+}
+
+.header__title {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.header__profile-pic {
+  height: 36px;
+  width: 36px;
+  position: relative;
+}
+
+.header__profile-pic__img {
+  border-radius: 50%;
+}
+
+.header__profile-pic::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: red;
+  position: absolute;
+  border-radius: 50%;
+  top: 2px;
+  right: 2px;
+}
+
+.today {
+  background: url(https://unsplash.it/1080/720?image=1044) no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  position: relative;
+}
+
+.today__purple-filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #B97CFC;
+  opacity: 0.3;
+}
+
+.today__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+.today__date {
+  font-weight: normal;
+  font-size: 5rem;
+  margin-right: 20px;
+}
+
+.today__wmy span {
+  display: block;
+}
+
+.today__weekday {
+  font-size: 2rem;
+}
+
+.today__month-year {
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-size: 0.75rem;
+}
+
+.today__add-btn {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.75rem;
+  background-color: #F93B69;
+  position: absolute;
+  bottom: -1.75rem;
+  right: 40px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.timeline {
+  padding: 30px 40px;
+  background: whitesmoke;
+  position: relative;
+}
+
+.timeline__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+}
+
+.timeline__circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  background-color: white;
+  z-index: 2;
+}
+
+.timeline__circle--active {
+  border: 1px solid red;
+}
+
+.timeline__hour {
+  width: 70px;
+  margin-left: 30px;
+  font-size: 0.875rem;
+}
+
+.timeline__title {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.timeline__tag {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.timeline__guests {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.timeline__guests img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.timeline__guests img + img {
+  margin-left: 10px;
+}
+
+.timeline__line {
+  height: 100%;
+  width: 1px;
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  left: 47px;
+  z-index: 0;
+}
+/*# sourceMappingURL=main.css.map */
